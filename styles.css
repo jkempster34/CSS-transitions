@@ -1,0 +1,33 @@
+div {
+  margin: 50px;
+}
+
+/* LINEAR */
+#linear {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: 2s;
+}
+
+#linear:hover {
+  width: 300px;
+}
+
+/* SPIN */
+#spin {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  /* width: amount of time to reach final width
+   * height amount of time to reach final height
+   * transform: amount of time to perform the tranformation (to spin)
+   */
+}
+
+#spin:hover {
+  width: 300px; /*final width*/
+  height: 300px; /*final height*/
+  transform: rotate(360deg); /*spin*/
+}
